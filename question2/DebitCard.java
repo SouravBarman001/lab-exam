@@ -14,7 +14,7 @@ public class DebitCard {
 
     }
     public void withdraw(int amount){
-        centralDatabase = new CentralDatabase(amount);
+        centralDatabase = new CentralDatabase(debitCard,amount);
         amountCalculator = new AmountCalculator(amount);
         ledScreen = new LEDScreen();
         receiptPrinter = new ReceiptPrinter(debitCard,amount);
